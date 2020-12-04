@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     Zoom Auto raise Hand
-// @version  1
+// @version  1.1
 // @author       You
 // @match        https://*.zoom.us/wc/*
 // @grant        none
@@ -25,11 +25,11 @@ console.log("--------------Auto Raise Hand loaded! - "+n);
     var tray = document.createElement("div");
     tray.innerHTML = '<span>Raise hand if </span> <input id="hands" style="width: 30px; background-color: black;border: solid 1px white;"></input> hands are raising <button id="handBtn" style="background-color: black; border: solid 1px white;">Set</button> <button id="stopBtn" style="background-color: black; border: solid 1px white;">Stop</button><br><span id="pluginText">The plugin will only work when opening the participant list.</span>';
     tray.setAttribute ('id', 'mask');
-    tray.style.position = "absolute";
+    tray.style.position = "fixed";
     tray.style.color = "white";
-    tray.style.backgroundColor = "rgba(0,0,0,0)";
-    tray.style.left = "250px";
-    tray.style.top = "5px";
+    tray.style.backgroundColor = "#000000a8";
+    tray.style.left = "25px";
+    tray.style.top = "50px";
     tray.style.zIndex = "999999";
     bar.insertBefore(tray, bar.childNodes[1]);
     var interval2;
