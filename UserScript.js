@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     Zoom Auto raise Hand
-// @version  1.1
+// @version  1.2
 // @author       You
 // @match        https://*.zoom.us/wc/*
 // @grant        none
